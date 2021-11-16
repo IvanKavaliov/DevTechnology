@@ -1,0 +1,81 @@
+body{
+    height: auto;
+    width: 1576px;
+    min-width: 320px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.header{
+    height: 100%;
+    min-height: 926px;
+    padding-top: 184px;
+    margin-left: 27px;
+    background-color: #eff0f2;
+}
+.header__logo{
+    width: 113px;
+    height: 46px;
+    padding-top: 8px;
+    text-align: center;
+    margin: 0 0 206px 199px;
+    border: solid 5.5px #170f1c;
+}
+.header__title{
+    text-align: center;
+    color: #505050;
+    text-transform: uppercase;
+    margin-bottom: 150px;
+}
+.header__title__text,
+.header__title__text__next{
+    display: block;
+    text-shadow: 3.5px 8.3px 10px rgba(0, 0, 0, 0.24);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 2.5px;
+ }
+ .header__title__text{
+     margin-bottom: 25px;
+ }
+.header__title__text-color{
+    width: 255px;
+    height: 54px;
+    object-fit: contain;
+    background-color: #76f4ea;
+    opacity: 0.5;
+}
+.header__title__text-color-2{
+    width: 236px;
+    height: 54px;
+    object-fit: contain;
+    background-color: #76f4ea;
+    opacity: 0.5;
+}
+.header__contact__us{
+    text-align: center;
+}
+.header__button{
+    width: 232px;
+    height: 53px;
+    margin: 0 auto;
+    border: 2px solid #777879;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.56;
+    font-weight: 400;
+    color: #3c3c3d;
+}
+.header__button:hover{
+    background-color: #777879;
+    color: #ffffff;
+    cursor: pointer;
+}
+.header__image{
+    position: absolute;
+    left: 72%;
+}
