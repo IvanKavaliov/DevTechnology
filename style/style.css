@@ -1,5 +1,5 @@
 body{
-    height: auto;
+    height: 100%;
     max-width: 1600px;
     min-width: 320px;
     margin: 0px auto;
@@ -147,13 +147,12 @@ body{
     text-align: left;
     color: rgba(0, 0, 0, 0.74);
 }
-.featured__works{
+.works{
     min-height: 912px;
-    background-color: aquamarine;
 }
 .works__images{
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(300px, 1fr));
+    grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(250px, 0.1fr));
     gap: 13px;
     margin: 0 20% 224px;
 }
@@ -169,3 +168,79 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
+.team{
+    /* min-height: 2064px; */
+    padding-top: 10%;
+    background-color: #f8fafa;
+}
+.team__images{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 13px;
+    margin: 0px 0px 308px 12%;
+}
+
+form {
+    margin: 0 auto;
+    padding-top: 47px;
+    width: 614px;
+    background-color: #4a5962;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ form li + li {
+    -top: 47px;
+  }
+  
+  label {
+    /* Определим размер и выравнивание */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* Убедимся, что все поля имеют одинаковые настройки шрифта
+       По умолчанию в textarea используется моноширинный шрифт */
+    font: 1em sans-serif;
+  
+    /* Определим размер полей */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Стилизуем границы полей */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Дополнительная подсветка для элементов в фокусе */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Выравним многострочные текстовые поля с их текстами-подсказками */
+    vertical-align: top;
+    resize: none;
+  
+    /* Предоставим пространство для ввода текста */
+    height: 5em;
+  }
+  
+  .button {
+    /* Выравним кнопки с их текстами-подсказками */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* Этот дополнительный внешний отступ примерно равен расстоянию
+       между текстами-подсказками и текстовыми полями */
+    margin-left: .5em;
+  }
