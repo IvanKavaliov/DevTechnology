@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>SHOPNO</title>
     <link href="style/_zeroing.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/cartonbox.min.css">
     <meta name="viewport" content="width=device-width">
-
 </head>
-
 <body>
-    <!-- <div class="wrapper"> -->
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -74,51 +71,65 @@
                     <h2>featured works</h2>
                     <h3>lorem ipsum dolor sit amet event landing template</h3>
                 </section>
-                <div class="works__images">
+                <div id="works__images" class="works__images">
                     <div class="works__image">
-                        <img src="images/work_1.png" alt="">
+                        <a href="images/work_1.png" class="cartonbox" data-cb-type="img" data-cb-group="gallery">
+                            <img src="images/work_1.png" alt="">
+                        </a>
                     </div>
                     <div class="works__image">
-                        <img src="images/work_2.png" alt="">
+                        <a href="images/work_2.png" class="cartonbox" data-cb-type="img" data-cb-group="gallery">
+                            <img src="images/work_2.png" alt="">
+                        </a>
                     </div>
                     <div class="works__image">
-                        <img src="images/work_3.png" alt="">
+                        <a href="images/work_3.png" class="cartonbox" data-cb-type="img" data-cb-group="gallery">
+                            <img src="images/work_3.png" alt="">
+                        </a>
                     </div>
                     <div class="works__image">
-                        <img src="images/work_4.png" alt="">
+                        <a href="images/work_4.png" class="cartonbox" data-cb-type="img" data-cb-group="gallery">
+                            <img src="images/work_4.png" alt="">
+                        </a>
                     </div>
                     <div class="works__image">
-                        <img src="images/work_5.png" alt="">
+                        <a href="images/work_5.png" class="cartonbox" data-cb-type="img" data-cb-group="gallery">
+                            <img src="images/work_5.png" alt="">
+                        </a>
                     </div>
                     <div class="works__image">
-                        <img src="images/work_6.png" alt="">
+                        <a href="images/work_6.png" class="cartonbox" data-cb-type="img" data-cb-group="gallery">
+                            <img src="images/work_6.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="team">
-            <section class="team__title">
-                <h2>small team</h2>
-                <h3>lorem ipsum dolor sit amet event landing template</h3>
-            </section>
-            <div class="team__images">
-                <div class="team__image">
-                    <img src="images/team_1.png" alt="">
-                </div>
-                <div class="team__image">
-                    <img src="images/team_2.png" alt="">
-                </div>
-                <div class="team__image">
-                    <img src="images/team_3.png" alt="">
-                </div>
-                <div class="team__image">
-                    <img src="images/team_4.png" alt="">
-                </div>
-                <div class="team__image">
-                    <img src="images/team_5.png" alt="">
-                </div>
-                <div class="team__image">
-                    <img src="images/team_6.png" alt="">
+            <div class="container">
+                <section class="team__title">
+                    <h2>small team</h2>
+                    <h3>lorem ipsum dolor sit amet event landing template</h3>
+                </section>
+                <div class="team__images">
+                    <div class="team__image">
+                        <img src="images/team_1.png" alt="">
+                    </div>
+                    <div class="team__image">
+                        <img src="images/team_2.png" alt="">
+                    </div>
+                    <div class="team__image">
+                        <img src="images/team_3.png" alt="">
+                    </div>
+                    <div class="team__image">
+                        <img src="images/team_4.png" alt="">
+                    </div>
+                    <div class="team__image">
+                        <img src="images/team_5.png" alt="">
+                    </div>
+                    <div class="team__image">
+                        <img src="images/team_6.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,6 +227,8 @@
             </g>
         </symbol>
     </svg>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/cartonbox.min.js"></script>
+    <script src="js/popup.js"></script>
 </body>
-
 </html>
