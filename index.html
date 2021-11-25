@@ -107,29 +107,90 @@
         </div>
         <div class="team">
             <div class="container">
-                <section class="team__title">
-                    <h2>small team</h2>
-                    <h3>lorem ipsum dolor sit amet event landing template</h3>
-                </section>
-                <div class="team__images">
-                    <div class="team__image">
-                        <img src="images/team_1.png" alt="">
-                    </div>
-                    <div class="team__image">
-                        <img src="images/team_2.png" alt="">
-                    </div>
-                    <div class="team__image">
-                        <img src="images/team_3.png" alt="">
-                    </div>
-                    <div class="team__image">
-                        <img src="images/team_4.png" alt="">
-                    </div>
-                    <div class="team__image">
-                        <img src="images/team_5.png" alt="">
-                    </div>
-                    <div class="team__image">
-                        <img src="images/team_6.png" alt="">
-                    </div>
+                <h2 class="team__title uppercase">small team</h2>
+                <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
+                <div class="team__gallery team-gallery">
+                    <figure class="team-gallery__item">
+                        <a class="team-gallery__link">
+                            <img class="team-gallery__img" src="images/team_1.png"
+                                alt="team-gallery__img_1_1.webp" />
+                        </a>
+                    </figure>
+                    <figure class="team-gallery__item">
+                        <a class="team-gallery__link">
+                            <img class="team-gallery__img" src="images/team_2.png"
+                                alt="team-gallery__img_1_2.webp" />
+                        </a>
+                        <div class="tooltip">
+                            <div class="tooltip__triangle"></div>
+                            <div class="employee">
+                                <header class="employee__header">
+                                    <span class="employee__name uppercase">Al Rayhan</span>
+                                    <span class="employee__position">/ UI Designer</span>
+                                </header>
+                                <p class="employee__info">
+                                    Lorem Ipsum is not simply is an action designer random text <br> It has roots in a
+                                    piece.
+                                </p>
+                                <div class="employee-socials">
+                                    <ul class="employee-socials__list">
+                                        <li class="employee-socials__item">
+                                            <a class="employee-socials__link">
+                                                <svg class="employee-socials__icon employee-socials__icon--facebook">
+                                                    <use xlink:href="images/socials-sprite.svg#facebook"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="employee-socials__item">
+                                            <a class="employee-socials__link">
+                                                <svg class="employee-socials__icon employee-socials__icon--twitter">
+                                                    <use xlink:href="images/socials-sprite.svg#twitter"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="employee-socials__item">
+                                            <a class="employee-socials__link">
+                                                <svg class="employee-socials__icon employee-socials__icon--dribble">
+                                                    <use xlink:href="images/socials-sprite.svg#dribble"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="employee-socials__item">
+                                            <a class="employee-socials__link">
+                                                <svg class="employee-socials__icon employee-socials__icon--gmail">
+                                                    <use xlink:href="images/socials-sprite.svg#gmail"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="team-gallery__item">
+                        <a class="team-gallery__link">
+                            <img class="team-gallery__img" src="images/team_3.png"
+                                alt="team-gallery__img_1_3.webp" />
+                        </a>
+                    </figure>
+                    <figure class="team-gallery__item">
+                        <a class="team-gallery__link">
+                            <img class="team-gallery__img" src="images/team_4.png"
+                                alt="team-gallery__img_2_1.webp" />
+                        </a>
+                    </figure>
+                    <figure class="team-gallery__item">
+                        <a class="team-gallery__link">
+                            <img class="team-gallery__img" src="images/team_5.png"
+                                alt="team-gallery__img_2_2.webp" />
+                        </a>
+                    </figure>
+                    <figure class="team-gallery__item">
+                        <a class="team-gallery__link">
+                            <img class="team-gallery__img" src="images/team_6.png"
+                                alt="team-gallery__img_2_3.webp" />
+                        </a>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -178,26 +239,25 @@
         <ul class="socials__list">
             <li class="socials__item"><a class="socials__link">
                     <svg class="socials__icon socials__icon--pinterest">
-                        <use xlink:href="#pinterest"></use>
+                        <use xlink:href="images/socials-sprite.svg#pinterest"></use>
                     </svg></a></li>
             <li class="socials__item"><a class="socials__link">
                     <svg class="socials__icon socials__icon--twitter">
-                        <use xlink:href="#twitter"></use>
+                        <use xlink:href="images/socials-sprite.svg#twitter"></use>
                     </svg></a></li>
             <li class="socials__item"><a class="socials__link">
                     <svg class="socials__icon socials__icon--facebook">
-                        <use xlink:href="#facebook"></use>
+                        <use xlink:href="images/socials-sprite.svg#facebook"></use>
                     </svg></a></li>
             <li class="socials__item"><a class="socials__link">
                     <svg class="socials__icon socials__icon--dribble">
-                        <use xlink:href="#dribble"></use>
+                        <use xlink:href="images/socials-sprite.svg#dribble"></use>
                     </svg></a></li>
         </ul>
     </footer>
-    <!-- </div> -->
     <script src="https://api-maps.yandex.ru/2.1/?apikey=4f96ab7b-190d-4fb7-bea4-cae798eb8bce&lang=ru_RU"></script>
     <script src="js/main.js"></script>
-    <svg display="none">
+    <!-- <svg display="none">
         <symbol id="pinterest" viewBox="0 0 512 512">
             <g>
                 <path
@@ -226,7 +286,7 @@
                 </path>
             </g>
         </symbol>
-    </svg>
+    </svg> -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/cartonbox.min.js"></script>
     <script src="js/popup.js"></script>
