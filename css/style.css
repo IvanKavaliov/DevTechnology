@@ -63,7 +63,7 @@
 .header .header__button {
   width: 232px;
   height: 53px;
-  margin: 0 auto;
+  margin: 0px auto;
   border: 2px solid #777879;
   border-radius: 2px;
   text-transform: uppercase;
@@ -204,7 +204,7 @@
 }
 
 .team {
-  padding: 99px 0 187px 0;
+  padding: 99px 0px 187px 0px;
   background-color: #f9fbfb;
   text-align: center;
 }
@@ -358,7 +358,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 21px 37px 21px;
+  border-width: 0px 21px 37px 21px;
   border-color: transparent transparent #71f6ec transparent;
   position: absolute;
   top: -19px;
@@ -400,7 +400,7 @@
 .contacts .container .contacts-section__form-wrapper {
   width: 614px;
   padding: 47px 33px 38px 31px;
-  margin: 0 26px 0 0;
+  margin: 0px 26px 0px 0px;
   opacity: 0.71;
   -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.12);
           box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.12);
@@ -409,7 +409,7 @@
 }
 @media (max-width: 1023px) {
   .contacts .container .contacts-section__form-wrapper {
-    margin: 0 0 10px 0;
+    margin: 0px 0px 10px 0px;
   }
 }
 @media (max-width: 620px) {
@@ -422,9 +422,9 @@
 }
 .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block,
 .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block {
-  border: 0;
+  border: none;
   border-bottom: 1px solid #6e7981;
-  padding: 15px 0;
+  padding: 15px 0px;
   background-color: transparent;
   outline: none;
 }
@@ -483,7 +483,7 @@
 .contacts .container .contacts-section__form-wrapper .contacts-section__form-submit-btn {
   max-width: 244px;
   height: 53px;
-  border: 0;
+  border: none;
   border-radius: 2px;
   background-color: #6eeee4;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -551,7 +551,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 93px 0 151px 0;
+  padding: 93px 0px 151px 0px;
   background-color: #262b2e;
   color: white;
 }
