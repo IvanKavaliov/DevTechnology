@@ -108,87 +108,27 @@
                 <h2 class="team__title uppercase">small team</h2>
                 <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
                 <div class="team__gallery team-gallery">
-                    <figure class="team-gallery__item">
-                        <a class="team-gallery__link">
-                            <img class="team-gallery__img" src="images/team_1.png"
-                                alt="team-gallery__img_1_1.webp" />
-                        </a>
-                    </figure>
-                    <figure class="team-gallery__item">
-                        <a class="team-gallery__link">
-                            <img class="team-gallery__img" src="images/team_2.png"
-                                alt="team-gallery__img_1_2.webp" />
-                        </a>
-                        <div class="tooltip">
-                            <div class="tooltip__triangle"></div>
-                            <div class="employee">
-                                <header class="employee__header">
-                                    <span class="employee__name uppercase">Al Rayhan</span>
-                                    <span class="employee__position">/ UI Designer</span>
-                                </header>
-                                <p class="employee__info">
-                                    Lorem Ipsum is not simply is an action designer random text <br> It has roots in a
-                                    piece.
-                                </p>
-                                <div class="employee-socials">
-                                    <ul class="employee-socials__list">
-                                        <li class="employee-socials__item">
-                                            <a class="employee-socials__link">
-                                                <svg class="employee-socials__icon employee-socials__icon--facebook">
-                                                    <use xlink:href="images/socials-sprite.svg#facebook"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="employee-socials__item">
-                                            <a class="employee-socials__link">
-                                                <svg class="employee-socials__icon employee-socials__icon--twitter">
-                                                    <use xlink:href="images/socials-sprite.svg#twitter"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="employee-socials__item">
-                                            <a class="employee-socials__link">
-                                                <svg class="employee-socials__icon employee-socials__icon--dribble">
-                                                    <use xlink:href="images/socials-sprite.svg#dribble"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="employee-socials__item">
-                                            <a class="employee-socials__link">
-                                                <svg class="employee-socials__icon employee-socials__icon--gmail">
-                                                    <use xlink:href="images/socials-sprite.svg#gmail"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="team-gallery__item">
-                        <a class="team-gallery__link">
-                            <img class="team-gallery__img" src="images/team_3.png"
-                                alt="team-gallery__img_1_3.webp" />
-                        </a>
-                    </figure>
-                    <figure class="team-gallery__item">
-                        <a class="team-gallery__link">
-                            <img class="team-gallery__img" src="images/team_4.png"
-                                alt="team-gallery__img_2_1.webp" />
-                        </a>
-                    </figure>
-                    <figure class="team-gallery__item">
-                        <a class="team-gallery__link">
-                            <img class="team-gallery__img" src="images/team_5.png"
-                                alt="team-gallery__img_2_2.webp" />
-                        </a>
-                    </figure>
-                    <figure class="team-gallery__item">
-                        <a class="team-gallery__link">
-                            <img class="team-gallery__img" src="images/team_6.png"
-                                alt="team-gallery__img_2_3.webp" />
-                        </a>
-                    </figure>
+                    <?php
+                        $team = [
+                            "name" => ["Jes­si­ca Alba", "Al Rayhan", "Jamal Hammer", "Arnold Smith", "Nina Dobrev", "Emma Smith"],
+                            "post" => ["CEO", "Ul Designer", "Junior QA", "Middle QA", "Senior QA", "Team Lead"],
+                            "text" => ["#", "#", "#", "#", "#", "#"],
+                            "link_vk" => ["#", "#", "#", "#", "#", "#"],
+                            "link_twitter" => ["#", "#", "#", "#", "#", "#"],
+                            "link_git" => ["#", "#", "#", "#", "#", "#"],
+                            "link_mail" => ["#", "#", "#", "#", "#", "#"]
+                        ];
+                        $i = 0;
+                        $img = 1;
+                        while ($i < count($team["name"]))
+                        {
+                            $name = $team["name"][$i];
+                            $post = $team["post"][$i];
+                            include "includes/team.php";
+                            $i++;
+                            $img++;
+                        }
+                    ?>
                 </div>
             </div>
         </div>
