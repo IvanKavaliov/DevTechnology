@@ -109,27 +109,25 @@
                 <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
                 <div class="team__gallery team-gallery">
                     <?php
-                        $connection = mysqli_connect('127.0.0.1', 'root', 'root', 'small_team');
-                        if ($connection == false)
+                        $team = [
+                            "name" => ["Jes­si­ca Alba", "Al Rayhan", "Jamal Hammer", "Arnold Smith", "Nina Dobrev", "Emma Smith"],
+                            "post" => ["CEO", "Ul Designer", "Junior QA", "Middle QA", "Senior QA", "Team Lead"],
+                            "text" => ["#", "#", "#", "#", "#", "#"],
+                            "link_vk" => ["#", "#", "#", "#", "#", "#"],
+                            "link_twitter" => ["#", "#", "#", "#", "#", "#"],
+                            "link_git" => ["#", "#", "#", "#", "#", "#"],
+                            "link_mail" => ["#", "#", "#", "#", "#", "#"]
+                        ];
+                        $i = 0;
+                        $img = 1;
+                        while ($i < count($team["name"]))
                         {
-                            echo 'Failed to connect to the database!<br>';
-                            echo mysqli_connect_error();
-                            exit();
-                        }
-                        $result = mysqli_query($connection, "SELECT * FROM team");
-                        while ($team = mysqli_fetch_assoc($result))
-                        {
-                            $name = $team['name'];
-                            $position = $team['position'];
-                            $info = $team['info'];
-                            $link_vk = $team['link_vk'];
-                            $link_twitter = $team['link_twitter'];
-                            $link_git = $team['link_git'];
-                            $link_email = $team['link_email'];
-                            $person_image = $team['image'];
+                            $name = $team["name"][$i];
+                            $post = $team["post"][$i];
                             include "includes/team.php";
+                            $i++;
+                            $img++;
                         }
-                        mysqli_close($connection);
                     ?>
                 </div>
             </div>
