@@ -1,7 +1,7 @@
 <figure class="team-gallery__item">
     <a class="team-gallery__link">
-        <?php 
-            echo "<img src='images/team_$img.png'";
+        <?php
+            echo "<img src='images/$person_image'";
         ?>
     </a>
     <div class="tooltip">
@@ -16,13 +16,14 @@
                 <span class="employee__position">
                     / 
                     <?php
-                        echo $post;
+                        echo $position;
                     ?>
                 </span>
             </header>
             <p class="employee__info">
-                Lorem Ipsum is not simply is an action designer random text <br> It has roots in a
-                piece.
+                <?php
+                    echo $info;
+                ?>
             </p>
             <div class="employee-socials">
                 <ul class="employee-socials__list">
