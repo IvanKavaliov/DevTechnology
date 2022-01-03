@@ -108,6 +108,7 @@
                 <h2 class="team__title uppercase">small team</h2>
                 <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
                 <div class="team__gallery team-gallery">
+                    <!-- Connection DB -->
                     <?php
                         $connection = mysqli_connect('127.0.0.1', 'root', 'root', 'small_team');
                         if ($connection == false)
@@ -122,7 +123,7 @@
                             $name = $team['name'];
                             $position = $team['position'];
                             $info = $team['info'];
-                            $link_vk = $team['link_vk'];
+                            $link_facebook = $team['link_facebook'];
                             $link_twitter = $team['link_twitter'];
                             $link_git = $team['link_git'];
                             $link_email = $team['link_email'];
