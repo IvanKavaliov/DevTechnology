@@ -108,15 +108,8 @@
                 <h2 class="team__title uppercase">small team</h2>
                 <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
                 <div class="team__gallery team-gallery">
-                    <!-- Connection DB -->
                     <?php
-                        $connection = mysqli_connect('127.0.0.1', 'root', 'root', 'small_team');
-                        if ($connection == false)
-                        {
-                            echo 'Failed to connect to the database!<br>';
-                            echo mysqli_connect_error();
-                            exit();
-                        }
+                        include "core/orm/Database.php";
                         $result = mysqli_query($connection, "SELECT * FROM team");
                         while ($team = mysqli_fetch_assoc($result))
                         {
