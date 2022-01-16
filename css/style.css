@@ -354,7 +354,7 @@
   }
 }
 .team .team__gallery .team-gallery__item .team-gallery__img {
-  width: 100%;
+  width: 90%;
 }
 .team .team__gallery .team-gallery__item:hover > .tooltip {
   position: absolute;

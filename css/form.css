@@ -1,0 +1,235 @@
+.contacts {
+    background-image: url(../images/cristmas_snow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 0px 10px;
+  }
+  @media (max-width: 1180px) {
+    .contacts {
+      padding: 160px 5px 100px;
+    }
+  }
+  @media (max-width: 1023px) {
+    .contacts {
+      padding: 100px 5px 50px;
+    }
+  }
+  @media (max-width: 440px) {
+    .contacts {
+      padding: 10px 0px 0px;
+    }
+  }
+  .contacts .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  @media (max-width: 1023px) {
+    .contacts .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  }
+  .contacts .container .contacts-section__form-wrapper {
+    width: 800px;
+    padding: 10px 30px 34px 31px;
+    margin: 0px;
+    -webkit-box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.12);
+            box-shadow: 0 0 30px 0 rgba(21, 21, 21, 0.12);
+    background-color: rgba(21, 21, 21, 0.6);
+    z-index: 0;
+  }
+  @media (max-width: 1023px) {
+    .contacts .container .contacts-section__form-wrapper {
+      width: 768px;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    .contacts .container .contacts-section__form-wrapper {
+      width: 614px;
+      margin: 0px 0px 5px 0px;
+    }
+  }
+  @media (max-width: 630px) {
+    .contacts .container .contacts-section__form-wrapper {
+      max-width: 420px;
+    }
+  }
+  @media (max-width: 440px) {
+    .contacts .container .contacts-section__form-wrapper {
+      max-width: 360px;
+    }
+  }
+  @media (max-width: 375px) {
+    .contacts .container .contacts-section__form-wrapper {
+      max-width: 310px;
+    }
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset {
+    margin-bottom: 18px;
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block,
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 8px 0px;
+    background-color: transparent;
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block::-webkit-input-placeholder, .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block::-webkit-input-placeholder {
+    display: block;
+    width: 100%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.4;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block::-moz-placeholder, .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block::-moz-placeholder {
+    display: block;
+    width: 100%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.4;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block:-ms-input-placeholder, .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block:-ms-input-placeholder {
+    display: block;
+    width: 100%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.4;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block::-ms-input-placeholder, .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block::-ms-input-placeholder {
+    display: block;
+    width: 100%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.4;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block,
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block,
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .input-block::placeholder,
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block::placeholder {
+    display: block;
+    width: 100%;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.4;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-fielset .textarea-block {
+    height: 135px;
+    resize: none;
+  }
+  .contacts .container .contacts-section__form-wrapper .contacts-section__form-submit-btn {
+    width: 244px;
+    height: 53px;
+    border: none;
+    border-radius: 2px;
+    background-color: #6eeee4;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+  @media (max-width: 1023px) {
+    .contacts .container .contacts-section__form-wrapper .contacts-section__form-submit-btn {
+      position: relative;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+    }
+  }
+  .contacts .container .contacts-section__form-wrapper .btn {
+    padding: 0;
+    cursor: pointer;
+  }
+  .contacts .container .contacts__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 500px;
+    padding: 36px 23px 19px 22px;
+    background-color: rgba(21, 21, 21, 0.71);
+  }
+  @media (max-width: 1023px) {
+    .contacts .container .contacts__info {
+      width: 768px;
+      margin-bottom: 5px;
+    }
+  }
+  @media (max-width: 768px) {
+    .contacts .container .contacts__info {
+      width: 614px;
+      margin-bottom: 5px;
+    }
+  }
+  @media (max-width: 630px) {
+    .contacts .container .contacts__info {
+      max-width: 420px;
+    }
+  }
+  @media (max-width: 440px) {
+    .contacts .container .contacts__info {
+      max-width: 360px;
+    }
+  }
+  @media (max-width: 375px) {
+    .contacts .container .contacts__info {
+      max-width: 310px;
+    }
+  }
+  .contacts .container .contacts__info .contacts__items {
+    margin-bottom: 23px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  @media (max-width: 375px) {
+    .contacts .container .contacts__info .contacts__items {
+      font-size: 12px;
+    }
+  }
+  .contacts .container .contacts__info .contacts__map {
+    max-width: 455px;
+    height: 224px;
+    background-color: #000000;
+  }
+  @media (max-width: 1023px) {
+    .contacts .container .contacts__info .contacts__map {
+      max-width: 768px;
+    }
+  }
+  @media (max-width: 768px) {
+    .contacts .container .contacts__info .contacts__map {
+      max-width: 600px;
+    }
+  }
+  @media (max-width: 440px) {
+    .contacts .container .contacts__info .contacts__map {
+      max-width: 360px;
+    }
+  }

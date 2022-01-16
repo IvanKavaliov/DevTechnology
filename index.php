@@ -109,20 +109,14 @@
                 <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
                 <div class="team__gallery team-gallery">
                     <?php
-                        $connection = mysqli_connect('127.0.0.1', 'root', 'root', 'small_team');
-                        if ($connection == false)
-                        {
-                            echo 'Failed to connect to the database!<br>';
-                            echo mysqli_connect_error();
-                            exit();
-                        }
+                        include "core/orm/Database.php";
                         $result = mysqli_query($connection, "SELECT * FROM team");
                         while ($team = mysqli_fetch_assoc($result))
                         {
                             $name = $team['name'];
                             $position = $team['position'];
                             $info = $team['info'];
-                            $link_vk = $team['link_vk'];
+                            $link_facebook = $team['link_facebook'];
                             $link_twitter = $team['link_twitter'];
                             $link_git = $team['link_git'];
                             $link_email = $team['link_email'];
