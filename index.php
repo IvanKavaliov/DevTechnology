@@ -110,7 +110,7 @@
                 <div class="team__gallery team-gallery">
                     <?php
                         include "core/orm/Database.php";
-                        $template = "includes/team.php";
+                        $template = "View/team.php";
                         include "core/query_all_data_team.php";
                         mysqli_close($connection);
                     ?>
