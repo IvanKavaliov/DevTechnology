@@ -6,7 +6,7 @@
     <td><?php echo $link_twitter ?></td>
     <td><?php echo $link_git ?></td>
     <td><?php echo $link_email ?></td>
-    <td scope="col">
+    <td scope="col" class="text-center">
         <a href="#"><button type="submit" class="btn btn-warning">EDIT PERSON</button></a>
         <a href="forms/delete_person.php"><button type="submit" class="btn btn-danger">DELETE PERSON</button></a>
     </td>
