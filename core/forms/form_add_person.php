@@ -10,7 +10,7 @@
     <div class="contacts" id="contact_us">
         <div class="container">
             <div class="contacts-section__form-wrapper">
-            <form action="action.php" method="post">
+            <form action="add_person.php" method="post">
                 <div class="col-md-4 mb-3">
                     <label for="validationServer01">Name</label>
                     <input type="text" class="form-control is-valid" id="name" name="name" placeholder="Input Name" required>
