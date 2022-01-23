@@ -37,7 +37,6 @@
     mysqli_close($connection);
     ?>
     </tbody>
-    <!-- <td colspan="8"  class="text-center"><a href="forms/form_add_person.php"><button type="submit" class="btn btn-success btn-block">ADD PERSON</button></a></td> -->
   </table>
 </body>
 </html>
