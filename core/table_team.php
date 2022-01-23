@@ -10,12 +10,12 @@
   <h1 class="text-center">All team list</h1>
   <table class="table table-hover table-dark">
     <thead>
-      <td colspan="6"  class="text-center">
+      <td colspan="7"  class="text-center">
         <a href="forms/form_add_person.php">
           <button type="submit" class="btn btn-success btn-block">ADD PERSON</button>
         </a>
       </td>
-      <td colspan="2"  class="text-center">
+      <td colspan="2" class="text-center">
         <h2>Admin panel for SHOPNO</h2>
       </td>
       <tr>
@@ -26,16 +26,16 @@
         <th scope="col">Twitter</th>
         <th scope="col">GIT</th>
         <th scope="col">E-mail</th>
-        <th scope="col" class="text-center">Actions</th>
+        <th scope="col" class="text-center" colspan="2">Actions</th>
       </tr>
     </thead>
     <tbody>
-    <?php
-    include "orm/Database.php";
-    $template = "templates.php";
-    include "query_all_data_team.php";
-    mysqli_close($connection);
-    ?>
+      <?php
+        include "orm/Database.php";
+        $template = "templates.php";
+        include "query_all_data_team.php";
+        mysqli_close($connection);
+      ?>
     </tbody>
   </table>
 </body>

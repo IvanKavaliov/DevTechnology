@@ -6,12 +6,16 @@
     <td><?php echo $link_twitter ?></td>
     <td><?php echo $link_git ?></td>
     <td><?php echo $link_email ?></td>
-    <td scope="col" class="text-center">
-        <!-- <a href="#"><button type="submit" class="btn btn-warning">EDIT PERSON</button></a> -->
-        <!-- <a href="forms/delete_person.php"><button id="" type="submit" class="btn btn-danger">DELETE PERSON</button></a> -->
-        <form method="post" action="forms/delete_person.php">
-            <input type="hidden" value='<?php echo $ID_person?>' name="hidden_field"/>
-            <input type="submit" name="id_submit" value="Delete" class="btn btn-danger">
+    <td scope="col">
+        <form method="post" action="forms/edit_person.php" class="">
+            <input type="hidden" value='<?php echo $ID_person?>' name="hidden_field">
+            <input type="submit" name="edit_submit" value="EDIT" class="btn btn-warning btn-primary btn-block">
+        </form>
+    </td>
+    <td scope="col">
+        <form method="post" action="forms/delete_person.php" class="">
+            <input type="hidden" value='<?php echo $ID_person?>' name="hidden_field">
+            <input type="submit" name="delete_submit" value="DELETE" class="btn btn-danger btn-secondary btn-block">
         </form>
     </td>
 </tr>
