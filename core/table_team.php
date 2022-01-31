@@ -11,9 +11,9 @@
   <table class="table table-hover table-dark">
     <thead>
       <td colspan="7"  class="text-center">
-        <a href="forms/form_add_person.php">
-          <button type="submit" class="btn btn-success btn-block">ADD PERSON</button>
-        </a>
+        <form method="post" action="forms/form_add_person.php">
+            <input type="submit" name="add_submit" value="ADD PERSON" class="btn btn-success btn-block">
+        </form>
       </td>
       <td colspan="2" class="text-center">
         <h2>Admin panel for SHOPNO</h2>
