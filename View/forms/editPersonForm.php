@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Add person</title>
+    <title>Edit person</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -10,11 +10,11 @@
     <div class="contacts" id="contact_us">
         <div class="container">
             <div class="text-center">
-                <h1>Add person</h1>
+                <h1>Edit person</h1>
                 <form action="../../controller/addPerson.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
                     <div class="col-xl-8">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control is-valid" id="name" name="name" placeholder="Input Name" required>
+                        <input type="text" value="Ivan" class="form-control" id="name" name="name" placeholder="Input Name" required>
                     </div>
                     <div class="col-xl-8">
                         <label for="position">Position</label>
@@ -41,7 +41,7 @@
                         <input type="text" class="form-control" id="link_email" name="link_email" placeholder="example@mail.ru" required>
                     </div>
                     <div class="col-xl-8">
-                        <button type="submit" class="btn btn-primary">ADD PERSON</button>
+                        <button type="submit" class="btn btn-success">Save change</button>
                     </div>
                 </form>
             </div>
