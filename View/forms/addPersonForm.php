@@ -11,7 +11,7 @@
         <div class="container">
             <div class="text-center">
                 <h1>Add person</h1>
-                <form action="add_person.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
+                <form action="../../controller/addPerson.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
                     <div class="col-6">
                         <label for="name">Name</label>
                         <input type="text" class="form-control is-valid" id="name" name="name" placeholder="Input Name" required>

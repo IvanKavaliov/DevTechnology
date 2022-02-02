@@ -13,7 +13,7 @@
         </form>
     </td>
     <td scope="col">
-        <form method="post" action="forms/delete_person.php" class="">
+        <form method="post" action="../controller/deletePerson.php" class="">
             <input type="hidden" value='<?php echo $ID_person?>' name="hidden_field">
             <input type="submit" name="delete_submit" value="DELETE" class="btn btn-danger btn-secondary btn-block" onclick="return confirm('Do you really want to DELETE?')">
         </form>

@@ -109,10 +109,9 @@
                 <h3 class="team__subtitle uppercase">Lorem ipsum dolor sit amet event landing template</h3>
                 <div class="team__gallery team-gallery">
                     <?php
-                        include "core/orm/Database.php";
+                        require_once "model/connectionToDatabase.php";
                         $template = "View/team.php";
-                        include "core/query_all_data_team.php";
-                        mysqli_close($connection);
+                        require_once "controller/queryAllDataTeam.php";
                     ?>
                 </div>
             </div>

@@ -11,7 +11,7 @@
   <table class="table table-hover table-dark">
     <thead>
       <td colspan="7"  class="text-center">
-        <form method="post" action="forms/form_add_person.php">
+        <form method="post" action="forms/addPersonForm.php">
             <input type="submit" name="add_submit" value="ADD PERSON" class="btn btn-success btn-block">
         </form>
       </td>
@@ -31,10 +31,9 @@
     </thead>
     <tbody>
       <?php
-        include "orm/Database.php";
-        $template = "templates.php";
-        include "query_all_data_team.php";
-        mysqli_close($connection);
+        require_once "../model/connectionToDatabase.php";
+        $template = "../model/personTemplate.php";
+        require_once "../controller/queryAllDataTeam.php";
       ?>
     </tbody>
   </table>

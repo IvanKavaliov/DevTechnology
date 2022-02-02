@@ -1,5 +1,6 @@
 <?php
-    $result = mysqli_query($connection, "SELECT * FROM team");
+    $query = "SELECT * FROM team";
+    $result = mysqli_query($connection, $query);
     while ($team = mysqli_fetch_assoc($result))
     {
         $ID_person = $team['id'];
@@ -11,6 +12,7 @@
         $link_git = $team['link_git'];
         $link_email = $team['link_email'];
         $person_image = $team['image'];
-        include $template;
+        require $template;
     }
+    mysqli_close($connection);
 ?>
