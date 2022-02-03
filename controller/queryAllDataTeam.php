@@ -1,6 +1,9 @@
 <?php
+    // require_once "model/queries.php";
+    // allTeamQuery();
     $query = "SELECT * FROM team";
     $result = mysqli_query($connection, $query);
+    $numberPerson = 1;
     while ($team = mysqli_fetch_assoc($result))
     {
         $ID_person = $team['id'];
@@ -13,6 +16,7 @@
         $link_email = $team['link_email'];
         $person_image = $team['image'];
         require $template;
+        $numberPerson++;
     }
     mysqli_close($connection);
 ?>

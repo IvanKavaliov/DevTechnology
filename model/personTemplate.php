@@ -1,5 +1,5 @@
 <tr>
-    <th scope="row"><?php echo $ID_person ?></th>
+    <th scope="row"><?php echo $numberPerson ?></th>
     <td><?php echo $name ?></td>
     <td><?php echo $position ?></td>
     <td><?php echo $link_facebook ?></td>
