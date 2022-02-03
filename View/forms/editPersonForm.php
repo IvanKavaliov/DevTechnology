@@ -14,31 +14,31 @@
                 <form action="../../controller/addPerson.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
                     <div class="col-xl-8">
                         <label for="name">Name</label>
-                        <input type="text" value="Ivan" class="form-control" id="name" name="name" placeholder="Input Name" required>
+                        <input type="text" value="<?php echo $name?>" class="form-control" id="name" name="name" placeholder="Input Name" required>
                     </div>
                     <div class="col-xl-8">
                         <label for="position">Position</label>
-                        <input type="text" class="form-control" id="position" name="position" placeholder="Input Position" required>
+                        <input type="text" value="<?php echo $position?>" class="form-control" id="position" name="position" placeholder="Input Position" required>
                     </div>
                     <div class="col-xl-8">
                         <label for="info">Info</label>
-                        <input type="text" class="form-control" id="info" name="info" placeholder="Input Info" required>
+                        <input type="text" value="<?php echo $info?>" class="form-control" id="info" name="info" placeholder="Input Info" required>
                     </div>
                     <div class="col-xl-8">
                         <label for="link_facebook">Facebook</label>
-                        <input type="text" class="form-control" id="link_facebook" name="link_facebook" placeholder="https://www.facebook.com/" required>
+                        <input type="text" value="<?php echo $linkFacebook?>" class="form-control" id="link_facebook" name="link_facebook" placeholder="https://www.facebook.com/" required>
                     </div>
                     <div class="col-xl-8">
                         <label for="link_twitter">Twitter</label>
-                        <input type="text" class="form-control" id="link_twitter" name="link_twitter" placeholder="https://twitter.com/" required>
+                        <input type="text" value="<?php echo $linkTwitter?>" class="form-control" id="link_twitter" name="link_twitter" placeholder="https://twitter.com/" required>
                     </div>
                     <div class="col-xl-8">
                         <label for="link_git">Git</label>
-                        <input type="text" class="form-control" id="link_git" name="link_git" placeholder="https://github.com/" required>
+                        <input type="text" value="<?php echo $linkGit?>" class="form-control" id="link_git" name="link_git" placeholder="https://github.com/" required>
                     </div>
                     <div class="col-xl-8 mb-3">
                         <label for="link_email">E-mail</label>
-                        <input type="text" class="form-control" id="link_email" name="link_email" placeholder="example@mail.ru" required>
+                        <input type="text" value="<?php echo $linkEmail?>" class="form-control" id="link_email" name="link_email" placeholder="example@mail.ru" required>
                     </div>
                     <div class="col-xl-8">
                         <button type="submit" class="btn btn-success">Save change</button>

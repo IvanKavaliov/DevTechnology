@@ -7,8 +7,8 @@
     <td><?php echo $link_git ?></td>
     <td><?php echo $link_email ?></td>
     <td scope="col">
-        <form method="post" action="../Model/editPerson.php" class="">
-            <input type="hidden" value='<?php echo $ID_person?>' name="hidden_field">
+        <form method="post" action="../controller/editPerson.php" class="">
+            <input type="hidden" value='<?php echo $ID_person?>' name="editSubmit">
             <input type="submit" name="edit_submit" value="EDIT" class="btn btn-warning btn-primary btn-block">
         </form>
     </td>
