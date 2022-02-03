@@ -11,7 +11,7 @@
         <div class="container">
             <div class="text-center">
                 <h1>Edit person</h1>
-                <form action="../../controller/addPerson.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
+                <form action="../../controller/changeInfoPerson.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
                     <div class="col-xl-8">
                         <label for="name">Name</label>
                         <input type="text" value="<?php echo $name?>" class="form-control" id="name" name="name" placeholder="Input Name" required>
@@ -41,7 +41,7 @@
                         <input type="text" value="<?php echo $linkEmail?>" class="form-control" id="link_email" name="link_email" placeholder="example@mail.ru" required>
                     </div>
                     <div class="col-xl-8">
-                        <button type="submit" class="btn btn-success">Save change</button>
+                        <button type="submit" name="saveButton" value="<?php echo $ID_person ?>" class="btn btn-success">Save change</button>
                     </div>
                 </form>
             </div>
