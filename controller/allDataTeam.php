@@ -1,8 +1,7 @@
 <?php
-    // require_once "model/queries.php";
-    // allTeamQuery();
-    $query = "SELECT * FROM team";
-    $result = mysqli_query($connection, $query);
+    require_once "$pathDatabase";
+    require_once "$pathQuery";
+    $result = allTeamQuery($connection);
     $numberPerson = 1;
     while ($team = mysqli_fetch_assoc($result))
     {

@@ -31,9 +31,10 @@
     </thead>
     <tbody>
       <?php
-        require_once "../model/connectionToDatabase.php";
         $template = "../model/personTemplate.php";
-        require_once "../controller/queryAllDataTeam.php";
+        $pathDatabase = "../model/connectionToDatabase.php";
+        $pathQuery = "../model/queries.php";
+        require_once "../controller/allDataTeam.php";
       ?>
     </tbody>
   </table>
