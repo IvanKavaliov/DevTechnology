@@ -1,5 +1,8 @@
 <?php
-    $result = mysqli_query($connection, "SELECT * FROM team");
+    require_once "$pathDatabase";
+    require_once "$pathQuery";
+    $result = allTeamQuery($connection);
+    $numberPerson = 1;
     while ($team = mysqli_fetch_assoc($result))
     {
         $ID_person = $team['id'];
@@ -11,6 +14,8 @@
         $link_git = $team['link_git'];
         $link_email = $team['link_email'];
         $person_image = $team['image'];
-        include $template;
+        require $template;
+        $numberPerson++;
     }
+    mysqli_close($connection);
 ?>

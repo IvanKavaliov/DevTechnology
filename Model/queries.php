@@ -1,4 +1,12 @@
 <?php
+    function allTeamQuery($connection)
+    {
+        $query = "SELECT * FROM team";
+        $result = mysqli_query($connection, $query)
+        or die ('Error in query to database');
+        return $result;
+    }
+
     function addPersonQuery($new_person, $connection)
     {
         $query = "INSERT INTO team (name, position, info, link_facebook, link_twitter, link_git, link_email, image) 

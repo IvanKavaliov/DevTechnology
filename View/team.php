@@ -1,9 +1,11 @@
 <figure class="team-gallery__item">
-    <a class="team-gallery__link">
-        <?php
-            echo "<img src='images/$person_image'";
-        ?>
-    </a>
+    <div class="team__image">
+        <a class="team-gallery__link">
+            <?php
+                echo "<img src='images/$person_image'";
+            ?>
+        </a>
+    </div>
     <div class="tooltip">
         <div class="tooltip__triangle"></div>
         <div class="employee">

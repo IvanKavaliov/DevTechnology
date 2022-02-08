@@ -11,36 +11,38 @@
         <div class="container">
             <div class="text-center">
                 <h1>Add person</h1>
-                <form action="add_person.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
-                    <div class="col-6">
+                <form action="../../controller/addPerson.php" method="post" class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
+                    <div class="col-xl-8">
                         <label for="name">Name</label>
                         <input type="text" class="form-control is-valid" id="name" name="name" placeholder="Input Name" required>
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-8">
                         <label for="position">Position</label>
                         <input type="text" class="form-control" id="position" name="position" placeholder="Input Position" required>
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-8">
                         <label for="info">Info</label>
                         <input type="text" class="form-control" id="info" name="info" placeholder="Input Info" required>
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-8">
                         <label for="link_facebook">Facebook</label>
                         <input type="text" class="form-control" id="link_facebook" name="link_facebook" placeholder="https://www.facebook.com/" required>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xl-8">
                         <label for="link_twitter">Twitter</label>
                         <input type="text" class="form-control" id="link_twitter" name="link_twitter" placeholder="https://twitter.com/" required>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xl-8">
                         <label for="link_git">Git</label>
                         <input type="text" class="form-control" id="link_git" name="link_git" placeholder="https://github.com/" required>
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xl-8 mb-3">
                         <label for="link_email">E-mail</label>
                         <input type="text" class="form-control" id="link_email" name="link_email" placeholder="example@mail.ru" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">ADD PERSON</button> 
+                    <div class="col-xl-8">
+                        <button type="submit" class="btn btn-primary">ADD PERSON</button>
+                    </div>
                 </form>
             </div>
         </div>
