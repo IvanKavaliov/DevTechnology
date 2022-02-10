@@ -35,7 +35,7 @@
         </div>
         <div class="container"><h1>Our Team</h1><hr></div>
         <div class="container mt-3 center-block">
-            <form method="post" action="forms/addPersonForm.php">
+            <form method="post" action="forms/addPersonFormNew.php">
                 <input type="submit" name="add_submit" value="Add new person" class="btn btn-block" style="background-color: #7749F8; color: white;">
             </form>
         </div>
