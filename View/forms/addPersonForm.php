@@ -13,13 +13,13 @@
             <div class="form-group row">
                 <label for="name" class="control-label col-md-2">Name</label>
                 <div class="col-md-10">
-                    <input type="text" class="form-control" id="name" name="name">
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="position" class="control-label col-md-2">Position</label>
                 <div class="col-md-10">
-                    <input type="text" class="form-control" id="position" name="position">
+                    <input type="text" class="form-control" id="position" name="position" required>
                 </div>
             </div>
             <div class="form-group row">
@@ -33,7 +33,7 @@
                 <label for="customFile" class="control-label col-2">Photo</label>
                 <div class="col-10">
                     <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <label class="custom-file-label" for="customFile" required>Choose file</label>
                 </div>
             </div>
             <div class="form-group row">
