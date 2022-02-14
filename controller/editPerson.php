@@ -18,5 +18,5 @@
         // require_once "../View/forms/editPersonForm.php";
     }
     mysqli_close($connection);
-    require_once "../View/forms/editPersonForm.php";
+    require_once "../View/forms/editPersonFormNew.php";
 ?>
