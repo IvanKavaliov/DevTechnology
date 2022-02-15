@@ -10,6 +10,6 @@
     $result = mysqli_query($connection, $query)
     or die ('Error in query to database');
     mysqli_close($connection);
-    header('location: ../View/tableTeam.php');
+    header('location: ../View/adminPanelNew.php');
     exit();
 ?>

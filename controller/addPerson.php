@@ -8,6 +8,6 @@
     require_once "../model/queries.php";
     addPersonQuery($new_person, $connection);
     mysqli_close($connection);
-    header('location: ../View/tableTeam.php');
+    header('location: ../View/adminPanelNew.php');
     exit();
 ?>
