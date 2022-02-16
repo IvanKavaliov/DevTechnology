@@ -2,7 +2,7 @@
     <div class="team__image">
         <a class="team-gallery__link">
             <?php
-                echo "<img src='images/$person_image'";
+                echo "<img src='images/personImages/$person_image'";
             ?>
         </a>
     </div>
