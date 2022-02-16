@@ -4,6 +4,6 @@
     require_once "../model/queries.php";
     deletePersonQuery($id_delete_person, $connection);
     mysqli_close($connection);
-    header('location: ../View/adminPanelNew.php');
+    header('location: ../View/adminPanel.php');
     exit();
 ?>

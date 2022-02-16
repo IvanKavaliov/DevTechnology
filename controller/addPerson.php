@@ -10,6 +10,6 @@
     require_once "../model/queries.php";
     addPersonQuery($new_person, $connection);
     mysqli_close($connection);
-    header('location: ../View/adminPanelNew.php');
+    header('location: ../View/adminPanel.php');
     exit();
 ?>
