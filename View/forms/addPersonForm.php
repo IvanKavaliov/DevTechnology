@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container border col-md-5 p-3 mt-3" style="background-color: #EEEEEE;">
-        <form action="../../controller/addPerson.php" method="post" role="form" class="form-horizontal p-3">
+        <form action="../../controller/addPerson.php" method="post" role="form" class="form-horizontal p-3" enctype="multipart/form-data">
             <h2 class="text-center mb-4">Add person form</h2>
             <div class="form-group row">
                 <label for="name" class="control-label col-md-2">Name</label>
@@ -28,11 +28,11 @@
                     <textarea class="form-control" id="info" rows="4" style="resize: none;" name="info"></textarea>
                 </div>
             </div>
-            <!-- *need to add style for width label -->
             <div class="form-group row">
-                <label for="customFile" class="control-label col-2">Photo</label>
+                <span class="control-label col-2">Photo</span>
+                <!-- *need to add style for width label -->
                 <div class="col-10">
-                    <input type="file" class="custom-file-input" id="customFile">
+                    <input type="file" name="image" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile" required>Choose file</label>
                 </div>
             </div>
