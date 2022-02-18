@@ -1,3 +1,6 @@
+<?php
+    require_once "../model/connectionToDatabase.php";
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,7 +38,7 @@
             </form>
         </div>
         <?php
-            $template = "../model/personTemplateNew.php";
+            $template = "../model/personTemplate.php";
             $pathDatabase = "../model/connectionToDatabase.php";
             $pathQuery = "../model/queries.php";
             require_once "../controller/allDataTeam.php";

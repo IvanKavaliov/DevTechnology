@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Add person form</title>
+    <title>Edit person form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="container border col-md-5 p-3 mt-3" style="background-color: #EEEEEE;">
-        <form action="../../controller/changeInfoPerson.php" method="post" role="form" class="form-horizontal p-3">
+        <form action="../../controller/changeInfoPerson.php" method="post" role="form" class="form-horizontal p-3" enctype="multipart/form-data">
             <h2 class="text-center mb-4">Edit person form</h2>
             <div class="form-group row">
                 <label for="name" class="control-label col-md-2">Name</label>
@@ -32,8 +32,8 @@
             <div class="form-group row">
                 <label for="customFile" class="control-label col-2">Photo</label>
                 <div class="col-10">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
+                    <input type="file" name="image" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile" required>Choose file</label>
                 </div>
             </div>
             <div class="form-group row">

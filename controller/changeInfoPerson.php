@@ -1,6 +1,17 @@
 <?php
     require_once '../model/classPerson.php';
     $idPerson = $_POST['saveButton'];
+    var_dump($_FILES['image']['tmp_name'][0]);
+    die;
+    if ($_FILES['image']['tmp_name'][0])
+    {
+        echo "GOOD, we can work";
+    }
+    else
+    {
+        echo "BAD, go to home";
+    }
+    die;
     $newInfoPerson = new Person(htmlspecialchars($_POST['name']), htmlspecialchars($_POST['position']),
                                 htmlspecialchars($_POST['info']), htmlspecialchars($_POST['link_facebook']), 
                                 htmlspecialchars($_POST['link_twitter']), htmlspecialchars($_POST['link_git']), 

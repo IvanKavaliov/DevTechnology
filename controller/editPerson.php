@@ -1,6 +1,7 @@
 <?php
-    require_once "../model/connectionToDatabase.php"; //connect to database
+    require_once "../model/connectionToDatabase.php";
     $idEditPerson = $_POST['editSubmit'];
+    // move to query.php in function
     $query = "SELECT * FROM team WHERE id = $idEditPerson";
     $result = mysqli_query($connection, $query)
     or die ('Error in query to database');
@@ -15,7 +16,6 @@
         $linkGit = $team['link_git'];
         $linkEmail = $team['link_email'];
         $personImage = $team['image'];
-        // require_once "../View/forms/editPersonForm.php";
     }
     mysqli_close($connection);
     require_once "../View/forms/editPersonForm.php";
