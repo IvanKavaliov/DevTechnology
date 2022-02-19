@@ -1,3 +1,11 @@
+<?php
+    require __DIR__ . '/vendor/autoload.php';
+    use Framework\Application;
+    $application = new Application();
+    $application->start();
+    $application->finish();
+    exit;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,7 +118,6 @@
                 <div class="team__gallery team-gallery">
                     <?php
                         $template = "View/team.php";
-                        $pathDatabase = "model/connectionToDatabase.php";
                         $pathQuery = "model/queries.php";
                         require_once "controller/allDataTeam.php";
                     ?>
