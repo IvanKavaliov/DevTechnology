@@ -19,7 +19,7 @@
         </header>
     </div>
     <div class="container border col-md-4 p-3 center-block" style="background-color: #EEEEEE;">
-        <form action="../../controller/addPerson.php" method="post" role="form" class="p-3" enctype="multipart/form-data">
+        <form action="../../model/auth.php" method="post" role="form" class="p-3" enctype="multipart/form-data">
             <h2 class="text-center mb-4">Admin Authorization</h2>
             <div class="form-group">
                 <label for="login" class="control-label">Login</label>
