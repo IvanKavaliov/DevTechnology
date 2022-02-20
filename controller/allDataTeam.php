@@ -1,4 +1,5 @@
 <?php
+    require_once "$pathDatabase";
     require_once "$pathQuery";
     $result = allTeamQuery($connection);
     while ($team = mysqli_fetch_assoc($result))
@@ -14,3 +15,4 @@
         $person_image = $team['image'];
         require $template;
     }
+?>

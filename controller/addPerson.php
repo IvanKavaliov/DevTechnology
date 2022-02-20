@@ -1,7 +1,5 @@
 <?php
     require_once '../model/classPerson.php';
-    var_dump($_FILES);
-    die;
     require_once '../model/uploadImage.php';
     $fileName = uploadImage($_FILES['image']);
     $new_person = new Person(htmlspecialchars($_POST['name']), htmlspecialchars($_POST['position']), 
