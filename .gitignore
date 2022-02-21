@@ -3,5 +3,5 @@
 
 # Ada Library Information
 *.ali
-config/database.php.sample
 vendor
+configuration/database.php
