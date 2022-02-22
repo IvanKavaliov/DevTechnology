@@ -32,8 +32,10 @@
             <div class="form-group row">
                 <label for="customFile" class="control-label col-2">Photo</label>
                 <div class="col-10">
-                    <input type="file" name="image" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile" required>Choose file</label>
+                    <div class="custom-file">
+                        <input type="file" name="image" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile" required>Choose file</label>
+                    </div>
                 </div>
             </div>
             <div class="form-group row">
