@@ -35,6 +35,9 @@
             </div>
             <div class="row"> 
                 <button type="submit" class="btn col-2" style="background: #7749F8; color: #ffffff">Submit</button>
+                <div class="col-10 text-danger">
+                    <?= @$authMessage ?>
+                </div>
             </div>
         </form>
     </div>

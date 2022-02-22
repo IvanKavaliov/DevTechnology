@@ -14,9 +14,10 @@
         {
             $userData = require_once "adminData.php";
             if ($userLogin === $userData['login'] && $userPassword === $userData['password']) {
-                return true;
+                header('location: ../View/adminPanel.php');
             } else {
-                return false;
+                $authMessage = 'WARNING! Invalid login or password entered!';
+                require_once '../View/forms/authForm.php';
             }
         }
     }
