@@ -4,6 +4,13 @@
     if (@$_FILES['image']['tmp_name'][0]) {
         require_once '../model/uploadImage.php';
         $fileName = uploadImage($_FILES['image']);
+        require_once "../model/connectionToDatabase.php";
+        $query = "SELECT image FROM team WHERE id = $idPerson";
+        $result = mysqli_query($connection, $query);
+        $team = mysqli_fetch_assoc($result);
+        $fileNameDelete = $team['image'];
+        $filePath = "../images/personImages/$fileNameDelete";
+        unlink($filePath);
     } else {
         require_once "../model/connectionToDatabase.php";
         $query = "SELECT image FROM team WHERE id = $idPerson";
