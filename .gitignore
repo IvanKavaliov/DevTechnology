@@ -4,3 +4,4 @@
 # Ada Library Information
 *.ali
 model/adminData.php
+model/connectionDB.php
