@@ -1,8 +1,9 @@
 <?php
     require_once "$pathDatabase";
     require_once "$pathQuery";
-    $result = allTeamQuery($connection);
-    while ($team = mysqli_fetch_assoc($result))
+    $db = new Database();
+    $user = allTeamQuery($db);
+    foreach ($user as $team)
     {
         $ID_person = $team['id'];
         $name = $team['name'];

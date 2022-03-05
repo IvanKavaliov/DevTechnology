@@ -1,7 +1,8 @@
 <?php
 return [
-    'id' => '',
-    'name_DB' => '',
+    'host' => '',
+    'nameDB' => '',
     'password' => '',
-    'db' => ''
+    'dbname' => '',
+    'charset' => 'utf8'
 ];

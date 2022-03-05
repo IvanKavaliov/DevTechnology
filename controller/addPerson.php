@@ -8,8 +8,8 @@
                             htmlspecialchars($_POST['link_email']), $fileName);
     require_once "../model/connectionToDatabase.php";
     require_once "../model/queries.php";
-    addPersonQuery($new_person, $connection);
-    mysqli_close($connection);
+    $db = new Database();
+    addPersonQuery($new_person, $db);
     header('location: ../View/adminPanel.php');
     exit();
 ?>
