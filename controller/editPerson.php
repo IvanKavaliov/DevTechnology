@@ -11,10 +11,10 @@
         $name = $team['name'];
         $position = $team['position'];
         $info = $team['info'];
-        $link_facebook = $team['link_facebook'];
-        $link_twitter = $team['link_twitter'];
-        $link_git = $team['link_git'];
-        $link_email = $team['link_email'];
+        $linkFacebook = $team['link_facebook'];
+        $linkTwitter = $team['link_twitter'];
+        $linkGit = $team['link_git'];
+        $linkEmail = $team['link_email'];
         $person_image = $team['image'];
     }
     require_once "../View/forms/editPersonForm.php";
