@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container">
             <div class="header__logo">
-                <img alt="logo" src="images/newLogo.pn">
+                <img alt="logo" src="images/newLogo.png">
             </div>
             <h1 class="header__title">
                 <span class="header__title-text">say hello to
