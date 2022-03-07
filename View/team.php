@@ -1,4 +1,4 @@
-<figure class="team-gallery__item">
+<div class="team-gallery__item">
     <div class="team__image">
         <a class="team-gallery__link">
             <?php
@@ -61,4 +61,4 @@
             </div>
         </div>
     </div>
-</figure>
+</div>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>SHOPNO</title>
+    <title>Dev technology</title>
     <link href="css/_zeroing.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/cartonbox.min.css">
@@ -12,16 +12,16 @@
     <header class="header">
         <div class="container">
             <div class="header__logo">
-                <img alt="logo" src="images/logo.png">
+                <img alt="logo" src="images/newLogo.pn">
             </div>
             <h1 class="header__title">
                 <span class="header__title-text">say hello to
-                    <span class="header__title-text-color-blue">shopno!</span>
+                    <span class="header__title-text-color-blue">Dev Technology!</span>
                 </span>
                 <br />
                 <span class="header__title-text-next">
                     <span class="header__title-text-color-blue">agency</span>
-                    corporate shopno theme
+                    corporate dt theme
                 </span>
             </h1>
             <div class="header__contact-us">
