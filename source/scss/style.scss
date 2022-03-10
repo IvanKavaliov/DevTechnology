@@ -1,16 +1,11 @@
-// Variables
 $color_blue: #76f4ea;
-// $color_blue: #f4a476;
 $color_gray: #777879;
 $color_white: #ffffff;
-
-
 .container {
     max-width: 1139px;
     min-height: 100%;
     margin: 0px auto;
 }
-// start block header +++
 .header {
     padding-left: 20px;
     padding-top: 64px;
@@ -25,6 +20,9 @@ $color_white: #ffffff;
         }
         @media (max-width: 375px) {
             margin-bottom: 30px;
+        }
+        img {
+            width: 80%;
         }
     }
     &__title {
@@ -112,7 +110,6 @@ $color_white: #ffffff;
         }
     }
 }
-// start block main, ???
 .main {
     width: 100%;
     h2 {
@@ -153,7 +150,6 @@ $color_white: #ffffff;
         }
     }
 }
-// Start block about us +++
 .about__us {
     padding: 129px 15px 0px;
     background-color: #f8fafa;
@@ -220,7 +216,6 @@ $color_white: #ffffff;
         }
     }
 }
-// Start block Works +++
 .works {
     padding: 129px 0px 125px;
     @media (max-width: 1160px) {
@@ -256,11 +251,10 @@ $color_white: #ffffff;
         }
     }
 }
-// Team block start +++
 .team {
     background-color: #f9fbfb;
     text-align: center;
-    .team__gallery {
+    &__gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -282,7 +276,12 @@ $color_white: #ffffff;
             }
             .team__image {
                 width: 100%;
-                min-width: 300px;
+                img {
+                    width: 370px;
+                    @media (max-width: 1150px) {
+                        width: 300px;
+                    }
+                }
             }
         }
         .team-gallery__item:hover>.tooltip {
@@ -298,12 +297,15 @@ $color_white: #ffffff;
             box-shadow: 2.7px 6.4px 16px 0 rgba(20, 20, 21, 0.18);
             background-color: #6df6eb;
             visibility: visible;
-            @media (max-width: 425px) {
-                min-height: 195px;
-                padding: 18px 54px 42px 38px;
+            @media (max-width: 1150px) {
+                min-height: 210px;
+                max-width: 280px;
+                padding: 15px;
             }
-            @media (max-width: 375px) {
+            @media (max-width: 660px) {
                 min-height: 138px;
+                max-width: 280px;
+                padding: 18px 54px 22px 38px;
             }
         }
         .tooltip {
@@ -339,7 +341,7 @@ $color_white: #ffffff;
                 font-size: 16px;
                 line-height: 24px;
                 color: rgba(0, 0, 0, 0.8);
-                @media (max-width: 375px) {
+                @media (max-width: 660px) {
                     display: none;
                 }
             }
@@ -399,7 +401,6 @@ $color_white: #ffffff;
         }
     }
 }
-// Block contacts start +++
 .contacts {
     background-image: url(../images/cristmas_snow.png);
     background-repeat: no-repeat;
@@ -545,7 +546,6 @@ $color_white: #ffffff;
         }
     }
 }
-// Footer style start +++
 .footer {
     display: flex;
     flex-direction: column;
