@@ -1,10 +1,9 @@
 <?php
     require_once "../model/connectionToDatabase.php";
-    $idEditPerson = $_POST['editSubmit'];
-    // move to query.php in function
-    $query = "SELECT * FROM team WHERE id = $idEditPerson";
     $db = new Database();
-    $user = $db->query("SELECT * FROM team WHERE id = $idEditPerson");
+    $idEditPerson = $_POST['editSubmit'];
+    require_once "../model/queries.php";
+    $user = getInfoPersonQuery($idEditPerson, $db);
     foreach ($user as $team)
     {
         $ID_person = $team['id'];

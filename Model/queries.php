@@ -15,8 +15,13 @@
         return $query = $connection->execute("DELETE FROM team WHERE id = $idPerson");
     }
 
-    function editPersonQuery()
+    function getInfoPersonQuery($idPerson, $connection)
     {
+        return $query = $connection->query("SELECT * FROM team WHERE id = $idPerson");
+    }
 
+    function getNameImagePerson($idPerson)
+    {
+        return $query = "SELECT image FROM team WHERE id = $idPerson";
     }
 ?>
