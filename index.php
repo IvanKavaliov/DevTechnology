@@ -25,7 +25,7 @@
                 </span>
             </h1>
             <div class="header__contact-us">
-                <button class="header__contact-us-button" onclick="document.location='#contact_us'">contact us</button>
+                <button class="header__contact-us-button" onclick="document.location='View/forms/authForm.php'">Login-in</button>
             </div>
             <div class="header__images">
                 <img src="images/header_glass.png" alt="glass" class="header__image">

@@ -41,7 +41,7 @@
             $pathQuery = "../model/queries.php";
             require_once "../controller/allDataTeam.php";
         ?>
-        <footer class="mt-3">
+        <footer class="mb-0 mt-3">
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             PHP Study, 2022
         </div>
