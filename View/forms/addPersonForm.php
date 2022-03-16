@@ -11,9 +11,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container border col-md-5 p-3 mt-3" style="background-color: #EEEEEE;">
+    <div class="container border col-md-5 p-1 mt-2" style="background-color: #EEEEEE;">
         <form action="../../controller/addPerson.php" method="post" role="form" class="form-horizontal p-3" enctype="multipart/form-data">
-            <h2 class="text-center mb-4">Add person form</h2>
+            <h2 class="text-center mb-2">Add person form</h2>
             <div class="form-group row">
                 <label for="name" class="control-label col-md-2">Name</label>
                 <div class="col-md-10">
