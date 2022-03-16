@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <div class="container border col-md-4 p-3 center-block" style="background-color: #EEEEEE; margin-top: 10%;">
-        <form action="../../controller/authController.php" method="post" role="form" class="p-3" enctype="multipart/form-data">
+    <div class="container border col-10 col-sm-6 col-md-8 col-lg-6 col-xl-4 p-3 center-block" style="background-color: #EEEEEE; margin-top: 10%;">
+        <form action="../../controller/authController.php" method="post" role="form" class="p-1" enctype="multipart/form-data">
             <h2 class="text-center mb-4">Admin Authorization</h2>
             <div class="form-group">
                 <label for="login" class="control-label">Login</label>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="row"> 
-                <button type="submit" class="btn col-2" style="background: #7749F8; color: #ffffff">Submit</button>
+                <button type="submit" class="btn col-12 col-sm-12 col-md-6 col-lg-4 col-xs-2 col-xl-2" style="background: #7749F8; color: #ffffff">Submit</button>
                 <div class="col-10 text-danger">
                     <?= @$authMessage ?>
                 </div>
