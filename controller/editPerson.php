@@ -1,10 +1,10 @@
 <?php
-    require_once "../model/connectionToDatabase.php"; //connect to database
+    require_once "../model/connectionToDatabase.php";
+    $db = new Database();
     $idEditPerson = $_POST['editSubmit'];
-    $query = "SELECT * FROM team WHERE id = $idEditPerson";
-    $result = mysqli_query($connection, $query)
-    or die ('Error in query to database');
-    while ($team = mysqli_fetch_assoc($result))
+    require_once "../model/queries.php";
+    $user = getInfoPersonQuery($idEditPerson, $db);
+    foreach ($user as $team)
     {
         $ID_person = $team['id'];
         $name = $team['name'];
@@ -14,9 +14,7 @@
         $linkTwitter = $team['link_twitter'];
         $linkGit = $team['link_git'];
         $linkEmail = $team['link_email'];
-        $personImage = $team['image'];
-        // require_once "../View/forms/editPersonForm.php";
+        $person_image = $team['image'];
     }
-    mysqli_close($connection);
-    require_once "../View/forms/editPersonFormNew.php";
+    require_once "../View/forms/editPersonForm.php";
 ?>

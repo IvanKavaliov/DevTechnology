@@ -15,12 +15,7 @@
   }
 }
 .header__logo {
-  max-width: 113px;
-  min-height: 46px;
-  padding-top: 8px;
-  text-align: center;
   margin-bottom: 206px;
-  border: solid 5.5px #170f1c;
 }
 @media (max-width: 1005px) {
   .header__logo {
@@ -31,6 +26,9 @@
   .header__logo {
     margin-bottom: 30px;
   }
+}
+.header__logo img {
+  width: 300px;
 }
 .header__title {
   text-align: center;
@@ -130,9 +128,9 @@
 .header__image {
   margin-left: 75.6%;
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .header__image {
-    margin-left: 65%;
+    margin-left: 60%;
   }
 }
 
@@ -315,8 +313,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -325,7 +323,7 @@
   background-color: #f9fbfb;
   text-align: center;
 }
-.team .team__gallery {
+.team__gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,39 +333,47 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.team .team__gallery .team-gallery__item {
+@media (max-width: 1150px) {
+  .team__gallery {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.team__gallery .team-gallery__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 32.5%;
-  min-width: 32.5%;
+  width: 32%;
+  max-width: 370px;
+  margin: 5px auto;
   cursor: pointer;
-  margin: 3px;
 }
-@media (max-width: 1135px) {
-  .team .team__gallery .team-gallery__item {
-    min-width: 40%;
+@media (max-width: 1150px) {
+  .team__gallery .team-gallery__item {
+    width: 320px;
+    margin: 5px;
   }
 }
-@media (max-width: 925px) {
-  .team .team__gallery .team-gallery__item {
-    min-width: 50%;
+.team__gallery .team-gallery__item .team__image {
+  width: 100%;
+}
+.team__gallery .team-gallery__item .team__image img {
+  width: 370px;
+  height: 420px;
+}
+@media (max-width: 1150px) {
+  .team__gallery .team-gallery__item .team__image img {
+    width: 300px;
   }
 }
-@media (max-width: 768px) {
-  .team .team__gallery .team-gallery__item {
-    min-width: 85%;
-    margin: 3px 0px;
-  }
-}
-.team .team__gallery .team-gallery__item .team-gallery__img {
-  width: 90%;
-}
-.team .team__gallery .team-gallery__item:hover > .tooltip {
+.team__gallery .team-gallery__item:hover > .tooltip {
   position: absolute;
   display: block;
   -ms-flex-item-align: end;
@@ -383,44 +389,47 @@
   background-color: #6df6eb;
   visibility: visible;
 }
-@media (max-width: 425px) {
-  .team .team__gallery .team-gallery__item:hover > .tooltip {
-    min-height: 195px;
-    padding: 18px 54px 42px 38px;
+@media (max-width: 1150px) {
+  .team__gallery .team-gallery__item:hover > .tooltip {
+    min-height: 210px;
+    max-width: 280px;
+    padding: 15px;
   }
 }
-@media (max-width: 375px) {
-  .team .team__gallery .team-gallery__item:hover > .tooltip {
+@media (max-width: 660px) {
+  .team__gallery .team-gallery__item:hover > .tooltip {
     min-height: 138px;
+    max-width: 280px;
+    padding: 18px 54px 22px 38px;
   }
 }
-.team .team__gallery .tooltip {
+.team__gallery .tooltip {
   display: none;
   width: 0;
   height: 0;
   visibility: hidden;
   text-align: left;
 }
-.team .team__gallery .tooltip .employee__header {
+.team__gallery .tooltip .employee__header {
   margin-bottom: 23px;
 }
-.team .team__gallery .tooltip .employee__header .employee__name,
-.team .team__gallery .tooltip .employee__header .employee__position {
+.team__gallery .tooltip .employee__header .employee__name,
+.team__gallery .tooltip .employee__header .employee__position {
   line-height: 24px;
 }
-.team .team__gallery .tooltip .employee__header .employee__name {
+.team__gallery .tooltip .employee__header .employee__name {
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.95);
 }
-.team .team__gallery .tooltip .employee__header .employee__position {
+.team__gallery .tooltip .employee__header .employee__position {
   font-family: "Merriweather-Italic", Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: rgba(118, 112, 112, 0.95);
 }
-.team .team__gallery .tooltip .employee__info {
+.team__gallery .tooltip .employee__info {
   max-width: 239px;
   margin-bottom: 37px;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -429,12 +438,12 @@
   line-height: 24px;
   color: rgba(0, 0, 0, 0.8);
 }
-@media (max-width: 375px) {
-  .team .team__gallery .tooltip .employee__info {
+@media (max-width: 660px) {
+  .team__gallery .tooltip .employee__info {
     display: none;
   }
 }
-.team .team__gallery .tooltip .employee-socials__list {
+.team__gallery .tooltip .employee-socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +455,7 @@
           align-items: center;
   max-width: 88px;
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,39 +466,39 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link:hover {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   -webkit-transition: ease-out 550ms;
   transition: ease-out 550ms;
   cursor: pointer;
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link:hover .employee-socials__icon {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link:hover .employee-socials__icon {
   fill: rgba(0, 0, 0, 0.7);
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--gmail,
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--twitter,
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--dribble,
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--facebook {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--gmail,
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--twitter,
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--dribble,
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--facebook {
   fill: rgba(0, 0, 0, 0.7);
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--facebook {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--facebook {
   width: 8px;
   height: 13px;
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--twitter {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--twitter {
   width: 13px;
   height: 10px;
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--dribble {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--dribble {
   width: 12px;
   height: 12px;
 }
-.team .team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--gmail {
+.team__gallery .tooltip .employee-socials__list .employee-socials__link .employee-socials__icon--gmail {
   width: 15px;
   height: 11px;
 }
-.team .team__gallery .tooltip__triangle:before {
+.team__gallery .tooltip__triangle:before {
   content: "";
   width: 0;
   height: 0;
@@ -663,6 +672,11 @@
 }
 .contacts .container .contacts-section__form-wrapper .btn {
   padding: 0;
+  cursor: pointer;
+}
+.contacts .container .contacts-section__form-wrapper .btn:hover {
+  background-color: #20d3c4;
+  color: #0e0505;
   cursor: pointer;
 }
 .contacts .container .contacts__info {

@@ -1,9 +1,16 @@
 <?php  
     require_once "../model/connectionToDatabase.php";
-    $id_delete_person = $_POST['deleteSubmit'];
+    $idDeletePerson = $_POST['deleteSubmit'];
+    $db = new Database();
+    $query = $db->query("SELECT image FROM team WHERE id = $idDeletePerson");
+    foreach ($query as $key) 
+    {
+       $fileNameDelete = $key['image']; 
+    }
+    require_once '../model/deletePersonImage.php';
+    deletePersonImage($fileNameDelete);
     require_once "../model/queries.php";
-    deletePersonQuery($id_delete_person, $connection);
-    mysqli_close($connection);
-    header('location: ../View/adminPanelNew.php');
+    deletePersonQuery($idDeletePerson, $db);
+    header('location: ../View/adminPanel.php');
     exit();
 ?>

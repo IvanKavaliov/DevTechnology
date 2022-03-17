@@ -5,11 +5,15 @@
     <title>Add person form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container border col-md-5 p-3 mt-3" style="background-color: #EEEEEE;">
+    <div class="container border col-md-5 p-1 mt-2" style="background-color: #EEEEEE;">
         <form action="../../controller/addPerson.php" method="post" role="form" class="form-horizontal p-3" enctype="multipart/form-data">
-            <h2 class="text-center mb-4">Add person form</h2>
+            <h2 class="text-center mb-2">Add person form</h2>
             <div class="form-group row">
                 <label for="name" class="control-label col-md-2">Name</label>
                 <div class="col-md-10">
@@ -29,11 +33,12 @@
                 </div>
             </div>
             <div class="form-group row">
-                <span class="control-label col-2">Photo</span>
-                <!-- *need to add style for width label -->
+                <label for="customFile" class="control-label col-2">Photo</label>
                 <div class="col-10">
-                    <input type="file" name="image" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile" required>Choose file</label>
+                    <div class="custom-file">
+                        <input type="file" name="image" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile" required>Choose file</label>
+                    </div>
                 </div>
             </div>
             <div class="form-group row">
@@ -66,4 +71,10 @@
         </form>
     </div>
 </body>
+<script type="application/javascript">
+    $('input[type="file"]').change(function(e) {
+    var fileName = e.target.files[0].name;
+    $('.custom-file-label').html(fileName);
+    });
+</script>
 </html>

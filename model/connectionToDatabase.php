@@ -1,13 +1,39 @@
 <?php
-    $id = '127.0.0.1';
-    $name_DB = 'root';
-    $password = 'root';
-    $db = 'small_team';
-    $connection = mysqli_connect($id, $name_DB, $password, $db);
-    if ($connection == false)
-    {
-        echo 'Failed to connect to the database!<br>';
-        echo mysqli_connect_error();
-        exit();
+    // class connection DB PDO
+    class Database {
+
+        private $pdo;
+
+        public function __construct()
+        {
+            $this->connection();
+        }
+
+        private function connection()
+        {
+            $connectionDB = require_once 'connectionDB.php';
+            $this->pdo = new PDO("mysql:host=$connectionDB[host];dbname=$connectionDB[dbname];charset=$connectionDB[charset]", "$connectionDB[nameDB]", "$connectionDB[password]");
+            
+            return $this;
+        }
+
+        public function execute($sql)
+        {
+            $sth = $this->pdo->prepare($sql);
+
+            return $sth->execute();
+        }
+
+        public function query($sql)
+        {
+            $sth = $this->pdo->prepare($sql);
+            $sth->execute();
+            $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+            if ($result === false) {
+                return [];
+            } else {
+                return $result;
+            }
+        }
     }
-?>

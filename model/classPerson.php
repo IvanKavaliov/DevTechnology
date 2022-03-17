@@ -8,7 +8,7 @@
         public $link_twitter;
         public $link_git;
         public $link_email;
-        public $person_image = "team_3.png";
+        public $person_image;
 
         public function __construct($name, $position, $info, $link_facebook, $link_twitter, $link_git, $link_email, $person_image){
             $this->name = $name;
