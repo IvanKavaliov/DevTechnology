@@ -105,8 +105,8 @@ $color_white: #ffffff;
     }
     &__image {
         margin-left: 75.6%;
-        @media (max-width: 375px) {
-            margin-left: 65%;
+        @media (max-width: 475px) {
+            margin-left: 60%;
         }
     }
 }
