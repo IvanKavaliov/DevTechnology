@@ -7,6 +7,49 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/cartonbox.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=10896d34-48e2-4a7c-832b-0a3275afd454&lang=ru_RU" type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+        function init(){
+        let myMap = new ymaps.Map("YMapsID", {
+            center: [53.90, 27.56],
+            zoom: 10,
+            controls: ['smallMapDefaultSet', 'routeButtonControl']
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+   
+        let myPlacemark2 = new ymaps.Placemark([53.86, 27.47], {
+        balloonContentBody: [
+            '<address>',
+            '<strong>Office 2 DevTechnology in Minsk</strong>',
+            '<br/>',
+            'Adress: Office 2: Dzerzhinsky Avenue, 104k2, Minsk, Belarus',
+            '<br/>',
+            'More: <a href="http://m44736af.beget.tech/">https://DevTechnology.com</a>',
+            '</address>'
+        ].join('')
+        }, {
+        preset: 'islands#redDotIcon'
+        });
+        let myPlacemark = new ymaps.Placemark([53.95, 27.68], {
+        balloonContentBody: [
+            '<address>',
+            '<strong>Main office: DevTechnology in Minsk</strong>',
+            '<br/>',
+            'Adress: Independence Avenue, 177, Minsk, Belarus',
+            '<br/>',
+            'More: <a href="http://m44736af.beget.tech/">https://DevTechnology.com</a>',
+            '</address>'
+        ].join('')
+        }, {
+            preset: 'islands#redDotIcon'
+        });
+        myMap.geoObjects
+        .add(myPlacemark) 
+        .add(myPlacemark2);
+    }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -137,9 +180,11 @@
                 </div>
                 <div class="contacts__info">
                     <div class="contacts__items">
-                        <span class="contacts__item">Adress line 1</span>
+                        <span class="contacts__item">Main office: Independence Avenue, 177
+Minsk, Belarus</span>
                         <br />
-                        <span class="contacts__item">Adress line 2</span>
+                        <span class="contacts__item">Office: Dzerzhinsky Avenue, 104k2
+Minsk, Belarus</span>
                         <br />
                         <span class="contacts__item">Phone: +37544XXXXXXX</span>
                         <br />
@@ -178,8 +223,6 @@
                     </svg></a></li>
         </ul>
     </footer>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=4f96ab7b-190d-4fb7-bea4-cae798eb8bce&lang=ru_RU"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/cartonbox.min.js"></script>
     <script src="js/popup.js"></script>
