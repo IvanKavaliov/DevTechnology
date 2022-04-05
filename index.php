@@ -7,49 +7,6 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/cartonbox.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=10896d34-48e2-4a7c-832b-0a3275afd454&lang=ru_RU" type="text/javascript"></script>
-    <script>
-        ymaps.ready(init);
-        function init(){
-        let myMap = new ymaps.Map("YMapsID", {
-            center: [53.90, 27.56],
-            zoom: 10,
-            controls: ['smallMapDefaultSet', 'routeButtonControl']
-        }, {
-            searchControlProvider: 'yandex#search'
-        });
-   
-        let myPlacemark2 = new ymaps.Placemark([53.86, 27.47], {
-        balloonContentBody: [
-            '<address>',
-            '<strong>Office 2 DevTechnology in Minsk</strong>',
-            '<br/>',
-            'Adress: Office 2: Dzerzhinsky Avenue, 104k2, Minsk, Belarus',
-            '<br/>',
-            'More: <a href="http://m44736af.beget.tech/">https://DevTechnology.com</a>',
-            '</address>'
-        ].join('')
-        }, {
-        preset: 'islands#redDotIcon'
-        });
-        let myPlacemark = new ymaps.Placemark([53.95, 27.68], {
-        balloonContentBody: [
-            '<address>',
-            '<strong>Main office: DevTechnology in Minsk</strong>',
-            '<br/>',
-            'Adress: Independence Avenue, 177, Minsk, Belarus',
-            '<br/>',
-            'More: <a href="http://m44736af.beget.tech/">https://DevTechnology.com</a>',
-            '</address>'
-        ].join('')
-        }, {
-            preset: 'islands#redDotIcon'
-        });
-        myMap.geoObjects
-        .add(myPlacemark) 
-        .add(myPlacemark2);
-    }
-    </script>
 </head>
 <body>
     <header class="header">
@@ -163,20 +120,21 @@
         <div class="contacts" id="contact_us">
             <div class="container">
                 <div class="contacts-section__form-wrapper">
-                    <form class="contacts-section__form">
+                    <form id="mailForm" class="contacts-section__form">
                         <fieldset class="contacts-section__form-fielset">
                             <input class="contacts-section__form-input input-block" type="text" name="name" id="name"
-                                placeholder="Name*" autocomplete="off" required="required" />
-                            <input class="contacts-section__form-input input-block" type="text" name="subject"
-                                id="subject" placeholder="Subject*" autocomplete="off" required="required" />
+                                placeholder="Name*" autocomplete="on" required>
+                            <input class="contacts-section__form-input input-block" type="tel" name="phone"
+                                id="phone" placeholder="Phone: +375(xx)-xxx-xx-xx" autocomplete="on" required pattern="+375[0-9]{9}" minlength="13" maxlength="13">
                             <input class="contacts-section__form-input input-block" type="email" name="email" id="email"
-                                placeholder="Email*" autocomplete="off" required="required" />
-                            <textarea class="contacts-section__form-textarea textarea-block" name="textarea"
-                                id="textarea" placeholder="Message*"></textarea>
+                                placeholder="Email*" autocomplete="off" required>
+                            <textarea class="contacts-section__form-textarea textarea-block" name="message"
+                                id="message" placeholder="Message*" required minlength="10"></textarea>
                         </fieldset>
                         <button class="contacts-section__form-submit-btn btn" type="submit" name="submit"
                             id="submit">Send message</button>
                     </form>
+                    <div id="errorMess"></div>
                 </div>
                 <div class="contacts__info">
                     <div class="contacts__items">
@@ -223,7 +181,51 @@ Minsk, Belarus</span>
                     </svg></a></li>
         </ul>
     </footer>
-    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/formProcessing.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=10896d34-48e2-4a7c-832b-0a3275afd454&lang=ru_RU" type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+        function init(){
+        let myMap = new ymaps.Map("YMapsID", {
+            center: [53.90, 27.56],
+            zoom: 10,
+            controls: ['smallMapDefaultSet', 'routeButtonControl']
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+   
+        let myPlacemark2 = new ymaps.Placemark([53.86, 27.47], {
+        balloonContentBody: [
+            '<address>',
+            '<strong>Office 2 DevTechnology in Minsk</strong>',
+            '<br/>',
+            'Adress: Office 2: Dzerzhinsky Avenue, 104k2, Minsk, Belarus',
+            '<br/>',
+            'More: <a href="http://m44736af.beget.tech/">https://DevTechnology.com</a>',
+            '</address>'
+        ].join('')
+        }, {
+        preset: 'islands#redDotIcon'
+        });
+        let myPlacemark = new ymaps.Placemark([53.95, 27.68], {
+        balloonContentBody: [
+            '<address>',
+            '<strong>Main office: DevTechnology in Minsk</strong>',
+            '<br/>',
+            'Adress: Independence Avenue, 177, Minsk, Belarus',
+            '<br/>',
+            'More: <a href="http://m44736af.beget.tech/">https://DevTechnology.com</a>',
+            '</address>'
+        ].join('')
+        }, {
+            preset: 'islands#redDotIcon'
+        });
+        myMap.geoObjects
+        .add(myPlacemark) 
+        .add(myPlacemark2);
+    }
+    </script>
     <script src="js/cartonbox.min.js"></script>
     <script src="js/popup.js"></script>
 </body>
