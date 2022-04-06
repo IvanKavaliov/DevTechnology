@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!$_SESSION){
+        header('location: authForm.php');
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
