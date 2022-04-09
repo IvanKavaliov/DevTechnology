@@ -1,4 +1,10 @@
 <?php
+    $userData = require_once "../model/adminData.php";
+    session_start();
+    if($_SESSION == null or ($_SESSION['login'] != $userData['login'] && $_SESSION['password'] != $userData['password'])){
+        header('location: forms/authForm.php');
+        exit();
+    }
     require_once "../model/connectionToDatabase.php";
 ?>
 <!doctype html>
@@ -22,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" style="color:antiquewhite;">Home</a>
+                            <a class="nav-link active" aria-current="page" href="http://m44736af.beget.tech/" style="color:antiquewhite;">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" style="color:antiquewhite;">Link_1</a>
